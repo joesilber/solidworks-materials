@@ -73,21 +73,36 @@ Approval of changes is done by typical Git "pull requests". You can store your e
 
 ### The "pull request" sequence
 
-1. **Create a branch** from `main` — give it a short descriptive name (e.g. `update-aluminum-density`).
+1. **Create a branch** from `main`.
+    - Give it a short descriptive name (e.g. `update-aluminum-density`).
+
 2. **Make your edits** on that branch and commit them.
-3. **Push the branch** to GitHub and open a **Pull Request** targeting `main`.
-4. **Discussion happens** in the PR — reviewers can comment on specific changes, and you can push additional commits to address feedback.
-5. **Once all conversations are resolved**, the PR can be merged into `main`.
+
+3. **Push the branch** to GitHub.
+
+4. Open a **Pull Request** targeting `main`.
+    - Assign a reviewer from the Reviewers panel on the right side of the PR page.
+
+5. **Discussion happens** in the PR.
+    - Reviewers can comment on specific changes.
+    - You can push additional commits to address feedback.
+
+6. **Once all conversations are resolved**, the PR can be merged into `main`.
 
 All changes must go through this process. 
 
-### Change approval rules
-As of this writing (2026-02-24) we have two rules applied in GitHub which relate to approval of changes.
+Steps (1) and (2) above can be swapped in order. I.e. if you made edits prior to creating a branch, you're still ok. Create the new branch after the fact and your uncommited changes will carry over to it.
 
-1. **Require a pull request before merging**.
-    - *All commits must be made to a non-protected branch and submitted via a pull request before they can be merged.*
-2. **Require conversation resolution before merging**.
-    - *All conversations on code must be resolved before a pull request can be merged.*
+### Change approval rules
+As of this writing (2026-02-24) we have the following rules applied in GitHub which relate to approval of changes.
+
+1. **Require a pull request before merging**
+    - All commits must be made to a non-protected branch and submitted via a pull request before they can be merged.
+    - We have set it to require at least 1 approval.
+2. **Require conversation resolution before merging**
+    - All conversations on code must be resolved before a pull request can be merged.
+3. **Do not allow bypassing the above settings**
+    - The above settings will apply to administrators, as well.
 
 These rules ensure that any changes to the properties must first undergo some review by individual(s) with approval permission.
 
