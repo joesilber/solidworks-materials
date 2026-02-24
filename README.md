@@ -82,12 +82,15 @@ Approval of changes is done by typical Git "pull requests". You can store your e
 All changes must go through this process. 
 
 ### Change approval rules
-As of this writing (2026-02-24) we have two rules applied in GitHub which relate to approval of changes.
+As of this writing (2026-02-24) we have the following rules applied in GitHub which relate to approval of changes.
 
-1. **Require a pull request before merging**.
-    - *All commits must be made to a non-protected branch and submitted via a pull request before they can be merged.*
-2. **Require conversation resolution before merging**.
-    - *All conversations on code must be resolved before a pull request can be merged.*
+1. **Require a pull request before merging**
+    - All commits must be made to a non-protected branch and submitted via a pull request before they can be merged.
+    - We have set it to require at least 1 approval.
+2. **Require conversation resolution before merging**
+    - All conversations on code must be resolved before a pull request can be merged.
+3. **Do not allow bypassing the above settings**
+    - The above settings will apply to administrators, as well.
 
 These rules ensure that any changes to the properties must first undergo some review by individual(s) with approval permission.
 
