@@ -1,5 +1,7 @@
 # Solidworks Materials
-This repo is for sharing material definitions among [LBNL engineers](https://engineering.lbl.gov/), for use in Solidworks. Initial discussion for the sharing approach was discussed in these [slides of 2026-02-18](2026-02-18_solidworks_materials_sharing_strategy.pdf). Contact: Joe Silber (LBNL)
+This repo is for sharing material definitions among [LBNL engineers](https://engineering.lbl.gov/), for use in Solidworks. Initial discussion for the sharing approach was discussed in these [slides of 2026-02-18](2026-02-18_solidworks_materials_sharing_strategy.pdf).
+
+Contact: Joe Silber (LBNL)
 
 
 ## Background
@@ -36,7 +38,7 @@ In the Solidworks material picker, “Libraries” correspond 1:1 to database te
 ## Using properties from this repo
 The simplest possible setup is like:
 
-1. Download [`lbnl_common.sldmat`](lbnl_common.sldmat) (typically from the `main` branch) to your local disk.
+1. Download [`lbnl-common.sldmat`](lbnl-common.sldmat) (typically from the `main` branch) to your local disk.
 2. In Solidworks, open `System Options` then go to `File Locations`. Add teh folder that contains `lbnl_common.sldmat`.
 
 Rather than downloading the file from the GitHub web interface, you can use a command line or graphical git client to work in the repo like any other. Set Solidworks to scan the local repo folder on your disk.
