@@ -75,11 +75,14 @@ Approval of changes is done by typical Git "pull requests". You can store your e
 
 1. **Create a branch** from `main` — give it a short descriptive name (e.g. `update-aluminum-density`).
 2. **Make your edits** on that branch and commit them.
-3. **Push the branch** to GitHub and open a **Pull Request** targeting `main`.
+3. **Push the branch** to GitHub.
+4. Open a **Pull Request** targeting `main`.
 4. **Discussion happens** in the PR — reviewers can comment on specific changes, and you can push additional commits to address feedback.
 5. **Once all conversations are resolved**, the PR can be merged into `main`.
 
 All changes must go through this process. 
+
+Steps (1) and (2) above can be swapped in order. I.e. if you made edits prior to creating a branch, you're still ok. Create the new branch after the fact and your uncommited changes will carry over to it.
 
 ### Change approval rules
 As of this writing (2026-02-24) we have the following rules applied in GitHub which relate to approval of changes.
