@@ -108,6 +108,10 @@ These rules ensure that any changes to the properties must first undergo some re
 ## Archiving source data
 It is encouraged to post data files to the repo that justify particular material properties. These should be saved to the [`sources`](sources) folder.
 
+The `sldmat` can include an attribute `propertysource` to state where material props come from. Within the Solidworks interface, this is the text field "Source":
+
+<img src="property_source.png">
+
 
 ## Private data
 This is a publicly viewable repository. Do not post private material property data or source files.
