@@ -101,8 +101,6 @@ As of this writing (2026-02-24) we have the following rules applied in GitHub wh
     - We have set it to require at least 1 approval.
 2. **Require conversation resolution before merging**
     - All conversations on code must be resolved before a pull request can be merged.
-3. **Do not allow bypassing the above settings**
-    - The above settings will apply to administrators, as well.
 
 These rules ensure that any changes to the properties must first undergo some review by individual(s) with approval permission.
 
