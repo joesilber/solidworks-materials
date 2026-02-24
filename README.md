@@ -97,4 +97,4 @@ It is encouraged to post data files to the repo that justify particular material
 
 
 ## Private data
-This is a publicly viewable repository. Do not post private material property or source data.
+This is a publicly viewable repository. Do not post private material property data or source files.
