@@ -77,8 +77,8 @@ Approval of changes is done by typical Git "pull requests". You can store your e
 2. **Make your edits** on that branch and commit them.
 3. **Push the branch** to GitHub.
 4. Open a **Pull Request** targeting `main`.
-4. **Discussion happens** in the PR — reviewers can comment on specific changes, and you can push additional commits to address feedback.
-5. **Once all conversations are resolved**, the PR can be merged into `main`.
+5. **Discussion happens** in the PR — reviewers can comment on specific changes, and you can push additional commits to address feedback.
+6. **Once all conversations are resolved**, the PR can be merged into `main`.
 
 All changes must go through this process. 
 
