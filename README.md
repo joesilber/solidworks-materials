@@ -39,9 +39,13 @@ In the Solidworks material picker, “Libraries” correspond 1:1 to database te
 The simplest possible setup is like:
 
 1. Download [`lbnl-common.sldmat`](lbnl-common.sldmat) (typically from the `main` branch) to your local disk.
-2. In Solidworks, open `System Options` then go to `File Locations`. Add teh folder that contains `lbnl_common.sldmat`.
+2. In Solidworks, open `System Options` then go to `File Locations`. Add the folder that contains `lbnl_common.sldmat`.
 
-Rather than downloading the file from the GitHub web interface, you can use a command line or graphical git client (e.g. [GitHub Desktop](https://desktop.github.com/download/) on Windows or Mac, among many other options) to work in the repo like any other. Set Solidworks to scan the local repo folder on your disk.
+Rather than downloading the file from the GitHub web interface, you can use a command line or graphical git client to work in the repo like any other. Set Solidworks to scan the local repo folder on your disk.
+
+There are numerous graphical git clients. A common one is [GitHub Desktop](https://desktop.github.com/download/) on Windows or Mac. However, as of this writing (2026-02-25) I was finding that it didn't handle diffs well on the UTF-16 encoded `sldmat` files that Solidworks produces. I didn't explore this behavior too deeply, but I did find that [Visual Studio Code](https://code.visualstudio.com/) handles the diff process nicely. So you may just want to use Visual Studio Code, or if you find a different client you like better, let the rest of us know.
+
+N.B. Don't put the `sldmat` file into your Windchill-managed folder on disk. It has nothing to do with Windchill -- totally separate worlds.
 
 
 ## Adding / editing properties (local)
