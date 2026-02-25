@@ -41,7 +41,7 @@ The simplest possible setup is like:
 1. Download [`lbnl-common.sldmat`](lbnl-common.sldmat) (typically from the `main` branch) to your local disk.
 2. In Solidworks, open `System Options` then go to `File Locations`. Add teh folder that contains `lbnl_common.sldmat`.
 
-Rather than downloading the file from the GitHub web interface, you can use a command line or graphical git client to work in the repo like any other. Set Solidworks to scan the local repo folder on your disk.
+Rather than downloading the file from the GitHub web interface, you can use a command line or graphical git client (e.g. [GitHub Desktop](https://desktop.github.com/download/) on Windows or Mac, among many other options) to work in the repo like any other. Set Solidworks to scan the local repo folder on your disk.
 
 
 ## Adding / editing properties (local)
