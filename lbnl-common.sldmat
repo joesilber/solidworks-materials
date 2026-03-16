@@ -30,15 +30,6 @@
 		</material>
 		<material name="Invar36" description="-" propertysource="SNAP-0064-J" appdata="">
 			<xhatch name="ANSI34 (Plastic Rubber)" angle="0.0" scale="1.0"/>
-			<physicalproperties>
-				<EX displayname="Elastic Modulus" value="1.41E+011" usepropertycurve="0"/>
-				<ALPX displayname="Thermal Expansion Coefficient" value="0.000001300000000" usepropertycurve="0"/>
-				<DENS displayname="Mass Density" value="8030" usepropertycurve="0"/>
-				<KX displayname="Thermal Conductivity" value="13.3" usepropertycurve="0"/>
-				<C displayname="Specific Heat" value="504" usepropertycurve="0"/>
-				<SIGXT displayname="Tensile Strength" value="276000000" usepropertycurve="0"/>
-			</physicalproperties>
-			<sustainability linkId="" dbName=""/>
 			<custom/>
 			<shaders>
 				<pwshader2 name="matte steel" path="\metal\steel\matte steel.p2m" isNewShader="1"/>
@@ -46,6 +37,15 @@
 			<swatchcolor RGB="A69E96">
 				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
 			</swatchcolor>
+			<physicalproperties>
+				<EX displayname="Elastic Modulus" value="1.41E+11" usepropertycurve="0"/>
+				<ALPX displayname="Thermal Expansion Coefficient" value="1.3e-06" usepropertycurve="0"/>
+				<DENS displayname="Mass Density" value="8030" usepropertycurve="0"/>
+				<KX displayname="Thermal Conductivity" value="13.3" usepropertycurve="0"/>
+				<C displayname="Specific Heat" value="504" usepropertycurve="0"/>
+				<SIGXT displayname="Tensile Strength" value="276000000" usepropertycurve="0"/>
+			</physicalproperties>
+			<sustainability linkId="" dbName=""/>
 		</material>
 		<material name="Ti-6AL-4V" description="-" propertysource="SNAP-0064-J" appdata="">
 			<xhatch name="ANSI34 (Plastic Rubber)" angle="0.0" scale="1.0"/>
@@ -126,51 +126,6 @@
 			<swatchcolor RGB="E87108">
 				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
 			</swatchcolor>
-		</material>
-		<material name="Vespel SP-1" description="Unfilled polyimide" propertysource="Dupont Vespel S Line Design Guide, H-53668-2 (09/22)" appdata="Assumptions:&#xA;1. Using DuPont's properties for parts machined out of isostatic material (not direct formed)&#xA;2. elastic modulus ~ flexural modulus&#xA;3. tensile strength ~ D1708 ultimate tensile (not E8)&#xA;4. compressive strength ~ compressive stress @ 10% strain&#xA;5. yield strength ~ compressive stress @ 0.1% offset&#xA;6. properties are generally at 23C (note DuPont also provides some props at 260C)&#xA;&#xA;Other properties:&#xA;1. Dynamic friction coefficient in air = 0.29 @ 0.875 MPa*m/s&#xA;2. Static friction coefficient in air = 0.35&#xA;3. Axial fatigue endurance limit = 55.8 MPa @ 10^3 cycles, 42.1 MPa @ 10^7&#xA;4. Flexural fatigue endurance limit = 65.5 MPa @ 10^3 cycles, 44.8 MPa @ 10^7&#xA;&#xA;Equivalents:&#xA;Meldin 7001 is an unfilled polyimide which is closely equivalent to Vespel SP-1.">
-			<xhatch name="ANSI34 (Plastic Rubber)" angle="0" scale="1"/>
-			<sheetmetalOption selectionTypeIndex="0" selectionType="Gauge Table" gaugeTablePath="C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\lang\english\sheet metal gauge tables" gaugeTableName="C:\PROGRAM FILES\SOLIDWORKS CORP\SOLIDWORKS\LANG\ENGLISH\SHEET METAL GAUGE TABLES\BEND ALLOWANCE INCHES SAMPLE.XLSX" bendTablePath="C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\lang\english\Sheetmetal Bend Tables" bendTableName="" bendCalculationTablePath="C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\lang\english\Sheetmetal Bend Tables" bendCalculationTableName=""/>
-			<shaders>
-				<pwshader2 name="color" path="\color.p2m" isNewShader="1"/>
-			</shaders>
-			<swatchcolor RGB="C0C000">
-				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
-			</swatchcolor>
-			<custom/>
-			<physicalproperties>
-				<EX displayname="Elastic Modulus" value="3102000000" usepropertycurve="0"/>
-				<NUXY displayname="Poisson's Ratio" value="0.41" usepropertycurve="0"/>
-				<ALPX displayname="Thermal Expansion Coefficient" value="5.4e-05" usepropertycurve="0"/>
-				<DENS displayname="Mass Density" value="1430" usepropertycurve="0"/>
-				<KX displayname="Thermal Conductivity" value="0.35" usepropertycurve="0"/>
-				<C displayname="Specific Heat" value="1130" usepropertycurve="0"/>
-				<SIGXT displayname="Tensile Strength" value="86200000" usepropertycurve="0"/>
-				<SIGXC displayname="Compressive Strength" value="133100000" usepropertycurve="0"/>
-				<SIGYLD displayname="Yield Strength" value="51000000" usepropertycurve="0"/>
-			</physicalproperties>
-			<sustainability linkId="" dbName=""/>
-		</material>
-		<material name="Vespel SP-3" description="MoS₂ filled polyimide, for friction/wear applications in vacuum or inert gases" propertysource="Dupont Vespel S Line Design Guide, H-53668-2 (09/22)" appdata="Assumptions:&#xA;1. Using DuPont's properties for parts machined out of isostatic material (not direct formed)&#xA;2. elastic modulus ~ flexural modulus&#xA;3. tensile strength ~ D1708 ultimate tensile (not E8)&#xA;4. compressive strength ~ compressive stress @ 10% strain&#xA;5. yield strength ~ compressive stress @ 1% strain&#xA;6. properties are generally at 23C (note DuPont also provides some props at 260C)&#xA;7. poisson ratio assumed to be like SP-1&#xA;&#xA;Other properties:&#xA;1. Dynamic friction coefficient in air = 0.25 @ 0.875 MPa*m/s&#xA;2. Dynamic friction coefficient in air = 0.17 @ 3.5 MPa*m/s&#xA;2. Static friction coefficient in vacuum = 0.30&#xA;&#xA;Equivalents:&#xA;Meldin 7003 is a MoS₂ filled polyimide which is closely equivalent to Vespel SP-3.">
-			<xhatch name="ANSI34 (Plastic Rubber)" angle="0" scale="1"/>
-			<sheetmetalOption selectionTypeIndex="0" selectionType="Gauge Table" gaugeTablePath="C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\lang\english\sheet metal gauge tables" gaugeTableName="C:\PROGRAM FILES\SOLIDWORKS CORP\SOLIDWORKS\LANG\ENGLISH\SHEET METAL GAUGE TABLES\BEND ALLOWANCE INCHES SAMPLE.XLSX" bendTablePath="C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\lang\english\Sheetmetal Bend Tables" bendTableName="" bendCalculationTablePath="C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\lang\english\Sheetmetal Bend Tables" bendCalculationTableName=""/>
-			<shaders>
-				<pwshader2 name="color" path="\color.p2m" isNewShader="1"/>
-			</shaders>
-			<swatchcolor RGB="C0C000">
-				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
-			</swatchcolor>
-			<physicalproperties>
-				<EX displayname="Elastic Modulus" value="3275000000" usepropertycurve="0"/>
-				<NUXY displayname="Poisson's Ratio" value="0.41" usepropertycurve="0"/>
-				<ALPX displayname="Thermal Expansion Coefficient" value="5.2e-05" usepropertycurve="0"/>
-				<DENS displayname="Mass Density" value="1600" usepropertycurve="0"/>
-				<KX displayname="Thermal Conductivity" value="0.47" usepropertycurve="0"/>
-				<SIGXT displayname="Tensile Strength" value="58500000" usepropertycurve="0"/>
-				<SIGXC displayname="Compressive Strength" value="127600000" usepropertycurve="0"/>
-				<SIGYLD displayname="Yield Strength" value="34500000" usepropertycurve="0"/>
-			</physicalproperties>
-			<sustainability linkId="" dbName=""/>
-			<custom/>
 		</material>
 	</classification>
 </mstns:materials>
