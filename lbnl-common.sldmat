@@ -66,6 +66,27 @@
 				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
 			</swatchcolor>
 		</material>
+		<material name="17-4PH, H900" description="Precipitation hardened stainless, condition H 900" propertysource="AKSteels Product Data Bulletin (12.13.16)" appdata="Condition A properties:&#xA;UTS = 160 ksi (1103 MPa)&#xA;YS = 115 ksi (793 MPa)">
+			<xhatch name="ANSI34 (Plastic Rubber)" angle="0.0" scale="1.0"/>
+			<physicalproperties>
+				<EX displayname="Elastic Modulus" value="1.97E+11" usepropertycurve="0"/>
+				<NUXY displayname="Poisson's Ratio" value="0.272" usepropertycurve="0"/>
+				<ALPX displayname="Thermal Expansion Coefficient" value="0.000010400000000" usepropertycurve="0"/>
+				<DENS displayname="Mass Density" value="7800" usepropertycurve="0"/>
+				<KX displayname="Thermal Conductivity" value="17.9" usepropertycurve="0"/>
+				<C displayname="Specific Heat" value="460" usepropertycurve="0"/>
+				<SIGXT displayname="Tensile Strength" value="1378951459" usepropertycurve="0"/>
+				<SIGYLD displayname="Yield Strength" value="1275530100" usepropertycurve="0"/>
+			</physicalproperties>
+			<custom/>
+			<shaders>
+				<pwshader2 name="default texture" path="\texture.p2m" isNewShader="1"/>
+				<swtexture path="\Solid"/>
+			</shaders>
+			<swatchcolor RGB="BA8BDB">
+				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
+			</swatchcolor>
+		</material>
 	</classification>
 	<classification name="Glasses">
 		<material name="Fused Silica" description="-" propertysource="Snap-0064-J" appdata="">
