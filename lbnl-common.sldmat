@@ -87,6 +87,26 @@
 				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
 			</swatchcolor>
 		</material>
+		<material name="416 Stainless Steel" description="Annealed" propertysource="https://www.pennstainless.com/resources/product-information/stainless-grades/400-series/416-stainless-steel/" appdata="2026-05-08 (JHS) Poisson ratio = 0.28 is assumed.&#xA;&#xA;Temper vs strength (Penn Stainless datasheet):&#xA;https://www.pennstainless.com/resources/product-information/stainless-grades/400-series/416-stainless-steel/&#xA;annealed = 517 MPa (tensile), 276 MPa (yield), HB 262&#xA;Condition T = 758 MPa (tensile), 586 MPa (yield), HB 248-302, very tough&#xA;204 deg C = 1340 MPa (tensile), 1050 MPa (yield), HB 388, 20 J (Charpy V)&#xA;316 deg C = 1350 MPa (tensile), 1060 MPa (yield), HB 388, 22 J (Charpy V)&#xA;427 deg C = 1405 MPa (tensile) , 1110 MPa (yield), HB 401, poor impact resistance&#xA;538 deg C = 1000 MPa (tensile), 795 MPa (yield), HB 321, poor impact resistance&#xA;593 deg C = 840 MPa (tensile), 705 MPa (yield), HB 248, 27 J (Charpy V)&#xA;650 deg C = 750 MPa (tensile), 575 MPa (yield), HB 223, 38 J (Charpy V)&#xA;&#xA;Temper vs strength (Atlas Steels datasheet):&#xA;https://atlassteels.com.au/wp-content/uploads/2021/06/Stainless-Steel-416-Grade-Data-Sheet-28-04-21.pdf&#xA;300 deg C = 1350 MPa (tensile), 1050 MPa (yield), HB 410, 50 J (Izod)&#xA;400 deg C = 1390 MPa (tensile), 1090 MPa (yield), HB 420, 43 J (Izod)&#xA;500 deg C = 1400 MPa (tensile), 1100 MPa (yield), HB 420, poor impact resistance&#xA;600 deg C = 870 MPa (tensile), 720 MPa (yield), HB 280, 45 J (Izod)&#xA;700 deg C = 710 MPa (tensile), 500 MPa (yield), HB 210, 65 J (Izod)&#xA;&#xA;Do not temper in the range 400 - 580 deg C due to poor impact resistance.&#xA;&#xA;And be wary of residual stress, stress corrosion cracking (SCC), fatigue strength etc in the lower temperature tempers. They could have their use cases, but exercise good engineering judgment and do your background research.&#xA;&#xA;Condition T properties are per ASTM A582 and are going to give a good balance of strength, toughness, code compliance, and SCC resistances.">
+			<xhatch name="ANSI34 (Plastic Rubber)" angle="0.0" scale="1.0"/>
+			<custom/>
+			<shaders>
+				<pwshader2 name="brushed steel" path="\metal\steel\brushed steel.p2m" isNewShader="1"/>
+			</shaders>
+			<swatchcolor RGB="FFF2E8">
+				<sldcolorswatch:Optical Ambient="1.000000" Transparency="0.000000" Diffuse="1.000000" Specularity="1.000000" Shininess="0.310000" Emission="0.000000"/>
+			</swatchcolor>
+			<physicalproperties>
+				<EX displayname="Elastic Modulus" value="2E+11" usepropertycurve="0"/>
+				<NUXY displayname="Poisson's Ratio" value="0.28" usepropertycurve="0"/>
+				<ALPX displayname="Thermal Expansion Coefficient" value="9.9e-06" usepropertycurve="0"/>
+				<DENS displayname="Mass Density" value="7750" usepropertycurve="0"/>
+				<KX displayname="Thermal Conductivity" value="24.9" usepropertycurve="0"/>
+				<C displayname="Specific Heat" value="460" usepropertycurve="0"/>
+				<SIGXT displayname="Tensile Strength" value="517000000" usepropertycurve="0"/>
+				<SIGYLD displayname="Yield Strength" value="276000000" usepropertycurve="0"/>
+			</physicalproperties>
+		</material>
 	</classification>
 	<classification name="Glasses">
 		<material name="Fused Silica" description="-" propertysource="Snap-0064-J" appdata="">
